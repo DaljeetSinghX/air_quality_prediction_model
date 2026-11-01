@@ -1,0 +1,50 @@
+CPCB Anand Vihar hourly dataset quality report
+================================================
+Files combined: 5
+Rows after invalid timestamps removed: 41,616
+Columns in combined output: 29
+Date range: 2022-01-01 00:00:00 to 2026-09-30 23:00:00
+Invalid timestamps removed: 0
+Duplicate timestamps found before de-duplication: 0
+Non-hourly timestamp steps: 0
+Rows after PM2.5 target missing rows excluded: 38,152
+Rows with missing PM2.5: 3,464
+PM2.5 negative values (flagged): 0
+PM2.5 > 500 µg/m³ (flagged): 458
+PM2.5 > 1000 µg/m³ (flagged): 0
+
+Entirely empty measurement columns dropped:
+  - Xylene (µg/m³)
+  - O Xylene (µg/m³)
+  - Eth-Benzene (µg/m³)
+  - RF (mm)
+
+Features with more than 80% missing values dropped:
+  - MP-Xylene (µg/m³)
+  - VWS (m/s)
+
+Missing values by column (combined output):
+  PM2.5 (µg/m³): 3,464 (8.32%)
+  PM10 (µg/m³): 3,724 (8.95%)
+  NO (µg/m³): 4,607 (11.07%)
+  NO2 (µg/m³): 4,019 (9.66%)
+  NOx (ppb): 4,229 (10.16%)
+  NH3 (µg/m³): 4,507 (10.83%)
+  SO2 (µg/m³): 5,198 (12.49%)
+  CO (mg/m³): 6,046 (14.53%)
+  Ozone (µg/m³): 3,672 (8.82%)
+  Benzene (µg/m³): 7,734 (18.58%)
+  Toluene (µg/m³): 7,626 (18.32%)
+  AT (°C): 2,524 (6.06%)
+  RH (%): 2,510 (6.03%)
+  WS (m/s): 2,678 (6.44%)
+  WD (deg): 2,781 (6.68%)
+  TOT-RF (mm): 6,552 (15.74%)
+  SR (W/mt2): 2,471 (5.94%)
+  BP (mmHg): 5,675 (13.64%)
+
+Largest timestamp gaps (first 20):
+  None
+
+Important: outlier flags are review aids, not proof that a value is invalid.
+Do not use future measurements as features for forecasting earlier targets.

@@ -1,0 +1,49 @@
+{
+  "selected_feature_set": "expanded_features",
+  "selected_model_family": "HistGradientBoosting",
+  "selected_config_id": 3,
+  "selected_weight_policy": "unweighted",
+  "selected_parameters": {
+    "max_iter": 250,
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 3.0,
+    "min_samples_leaf": 40
+  },
+  "selection_metric": "2025 validation overall MAE",
+  "validation_metrics": {
+    "MAE": 19.136374708964595,
+    "RMSE": 29.028091829206804,
+    "R2": 0.9190070975030183
+  },
+  "test_2026_metrics": {
+    "MAE": 18.51927599104625,
+    "RMSE": 27.760924303456058,
+    "R2": 0.8528103985743627,
+    "mean_bias": -0.15231041188555,
+    "p90_absolute_error": 42.69465983471946,
+    "n": 6171
+  },
+  "persistence_baseline_2026": {
+    "MAE": 20.375181002989038,
+    "RMSE": 30.5897193583365,
+    "R2": 0.8208169856181368,
+    "mean_bias": 0.11183992029226171,
+    "p90_absolute_error": 48.0,
+    "n": 6022
+  },
+  "feature_count": 55,
+  "train_observations": 23495,
+  "validation_observations": 8028,
+  "test_observations": 6171,
+  "forecast_horizon": "1 hour",
+  "target_cutoff_ug_m3": 500.0,
+  "model_file": "C:\\0.CODE\\semester_3\\machine_learning\\air_pollution_model\\final_experiments\\models\\pm25_model_final_experiment.joblib",
+  "leakage_controls": [
+    "only source-hour features used to predict next-hour target",
+    "only exact consecutive one-hour timestamp pairs",
+    "target-derived flags excluded from predictors",
+    "2025 validation MAE used for configuration selection",
+    "2026 used only for the final selected configuration"
+  ]
+}

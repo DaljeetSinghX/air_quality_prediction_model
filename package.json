@@ -1,0 +1,27 @@
+{
+  "name": "air-quality-prediction-fullstack",
+  "version": "1.0.0",
+  "description": "Full-Stack Machine Learning Web Application for CPCB Anand Vihar PM2.5 Air Quality Prediction",
+  "scripts": {
+    "start:ml": "python -m uvicorn app:app --app-dir ml-service --host 127.0.0.1 --port 8000",
+    "start:server": "npm --prefix server run dev",
+    "start:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client",
+    "seed": "npm --prefix server run seed"
+  },
+  "keywords": [
+    "air-quality",
+    "pm25",
+    "machine-learning",
+    "delhi",
+    "cpcb",
+    "fastapi",
+    "express",
+    "react",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}

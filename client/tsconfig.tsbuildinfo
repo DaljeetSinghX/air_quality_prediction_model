@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/predictionhistoryview.tsx","./src/components/simplepredictioninterface.tsx","./src/services/api.ts","./src/types/index.ts","./src/utils/formatters.ts"],"version":"5.9.3"}
